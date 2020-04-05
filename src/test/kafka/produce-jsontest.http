@@ -1,0 +1,19 @@
+POST /topics/jsontest
+Host: localhost:8082
+Content-Type: application/vnd.kafka.json.v2+json
+Accept: application/vnd.kafka.v2+json
+
+{"records":[{"value":{"foo":"bar"}}]}
+
+# {
+#   "offsets": [
+#     {
+#       "partition": 0,
+#       "offset": 4,
+#       "error_code": null,
+#       "error": null
+#     }
+#   ],
+#   "key_schema_id": null,
+#   "value_schema_id": null
+# }
